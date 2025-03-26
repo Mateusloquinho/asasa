@@ -1,16 +1,10 @@
-:root {
-    --roxo: #A294F9;
-    --lilas: #CDC1FF;
-    --areia-roxa: #E5D9F2;
-    --roxinho: #F5EFFF;
-}
 
 header {
     display: flex;
     width: 100%;
-    background-color: var(--roxo);
-    padding: 1rem; /*espaçamento interno*/
-    position: relative; /*posiciona em relação a posição inicial*/
+    background-color: var(--a);
+    padding: 1rem;
+    position: relative; 
     justify-content: center;
 }
 
@@ -23,7 +17,7 @@ header {
     cursor: pointer;
     font-size: 20px;
     background: none;
-    background-color: var(--lilas);
+    background-color: var(--b);
     border: none;
     border-radius: 5px;
     padding: 15px 12px;
@@ -52,8 +46,8 @@ header {
 .listinha {
     display: none;
     position: absolute;
-    background-color: var(--lilas);
-    box-shadow: 0 2px 5px var(--roxinho);
+    background-color: var(--b);
+    box-shadow: 0 2px 5px var(--d);
     min-width: 190px;
     z-index: 1;
     top: 100%;
@@ -70,7 +64,7 @@ header {
 }
 
 .listinha a:hover {
-    background-color: var(--areia-roxa);
+    background-color: var(--c);
 }
 
 #menu-toggle:checked ~ .listinha {
@@ -95,7 +89,7 @@ header {
 }
 
 body {
-    background-color: var(--roxinho);
+    background-color: var(--c);
     font-family: Arial, sans-serif;
 }
 
@@ -107,4 +101,11 @@ h2 {
     display: flex;
     justify-content: center;
     padding: 200px;
+}
+
+:root {
+    --a: #aa891e;
+    --b: #e2931c;
+    --c: #fdfdfd;
+    --d: #F5EFFF;
 }
