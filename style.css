@@ -56,11 +56,11 @@ header {
 
 .listinha a {
     color: black;
-    padding: 10px 12px;
+    padding: 10px 10px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     display: block;
-    text-align: center;
+    text-align: left;
 }
 
 .listinha a:hover {
