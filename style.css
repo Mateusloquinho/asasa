@@ -1,70 +1,82 @@
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --roxo: #A294F9;
+    --lilas: #CDC1FF;
+    --areia-roxa: #E5D9F2;
+    --roxinho: #F5EFFF;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    background-color: var(--marinha);
-    padding: 1 rem;
-    position: relative;
+    background-color: var(--roxo);
+    padding: 1rem; /*espaçamento interno*/
+    position: relative; /*posiciona em relação a posição inicial*/
+    justify-content: center;
 }
 
-.xeque{
-    width: 20%;
+.menu-materias {
+    width: 15%;
     display: inline-block;
 }
 
-.botaozin{
+.botao-materias {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 20px;
     background: none;
-    background-color: var(--azul);
+    background-color: var(--lilas);
     border: none;
-    padding: 1.05rem 1.5rem;
-    color: var(--bisque)
+    border-radius: 5px;
+    padding: 15px 12px;
+    color: black;
 }
 
-#xequemenu{
+.menu button {
+    text-decoration: none;
+    background-color: #CDC1FF;
+    color: black;
+    font-size: 18px 8px;
+    padding: 5px 10px;
+    margin: 0px 8px;
+    border-radius: 5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu-toggle {
     display: none;
 }
 
-.listinha{
+.listinha {
     display: none;
     position: absolute;
-    background-color: var(--vermelho);
-    box-shadow: 0 2px 5px var(--marinha);
+    background-color: var(--lilas);
+    box-shadow: 0 2px 5px var(--roxinho);
     min-width: 190px;
     z-index: 1;
-    left: 1rem;
     top: 100%;
+    border-radius: 5px;
 }
 
-.listinha a{
-    color: var(--preto);
-    padding: 0.75rem 1rem;
+.listinha a {
+    color: black;
+    padding: 10px 12px;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 20px;
     display: block;
     text-align: center;
 }
 
-.listinha a:hover{
-    background-color: var(--branco);
+.listinha a:hover {
+    background-color: var(--areia-roxa);
 }
 
-#xequemenu:checked ~ .listinha{
+#menu-toggle:checked ~ .listinha {
     display: block;
 }
 
-#xequemenu:checked + .botaozin{
-    background-color:var(--preto);
-}
-
-:root{
-    --preto: #000000;
-    --marinha: #793d05c9;
-    --preto: #a16b2d;
-    --preto: #e4b279;
+#menu-toggle:checked + .botao-materias {
+    background-color: white;
 }
