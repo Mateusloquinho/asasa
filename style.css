@@ -50,7 +50,7 @@ header {
     text-align: center;
 }
 
-. .listinha a:hover{
+.listinha a:hover{
     background-color: var(--branco);
 }
 
