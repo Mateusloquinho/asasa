@@ -5,16 +5,61 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #4CAF50;
-    padding: 10px 20px;
-    color: white;
+    width: 100%;
+    background-color: var(--marinha);
+    padding: 1 rem;
+    position: relative;
 }
 
-.materia button {
-    padding: 10px 20px;
-    font-size: 16px;
+.xeque{
+    width: 20%;
+    display: inline-block;
+}
+
+.botaozin{
     cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    background-color: var(--azul);
+    border: none;
+    padding: 1.05rem 1.5rem;
+    color: var(--bisque)
+}
+
+#xequemenu{
+    display: none;
+}
+
+.listinha{
+    display: none;
+    position: absolute;
+    background-color: var(--vermelho);
+    box-shadow: 0 2px 5px var(--marinha);
+    min-width: 190px;
+    z-index: 1;
+    left: 1rem;
+    top: 100%;
+}
+
+.listinha a{
+    color: var(--preto);
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+
+. .listinha a:hover{
+    background-color: var(--branco);
+}
+
+#xequemenu:checked ~ .listinha{
+    display: block;
+}
+
+#xequemenu:checked + .botaozin{
+    background-color:var(--preto);
 }
 
 :root{
