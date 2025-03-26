@@ -100,7 +100,12 @@ li {
 h2 {
     display: flex;
     justify-content:left;
-    padding: 210px;
+    padding: 50px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
 }
 
 :root {
