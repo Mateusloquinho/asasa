@@ -99,8 +99,8 @@ li {
 
 h2 {
     display: flex;
-    justify-content: center;
-    padding: 200px;
+    justify-content:left;
+    padding: 210px;
 }
 
 :root {
