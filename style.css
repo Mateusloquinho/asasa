@@ -9,8 +9,8 @@ header {
     display: flex;
     width: 100%;
     background-color: var(--roxo);
-    padding: 1rem; /*espaçamento interno*/
-    position: relative; /*posiciona em relação a posição inicial*/
+    padding: 1rem; 
+    position: relative;
     justify-content: center;
 }
 
@@ -47,36 +47,4 @@ header {
 
 #menu-toggle {
     display: none;
-}
-
-.listinha {
-    display: none;
-    position: absolute;
-    background-color: var(--lilas);
-    box-shadow: 0 2px 5px var(--roxinho);
-    min-width: 190px;
-    z-index: 1;
-    top: 100%;
-    border-radius: 5px;
-}
-
-.listinha a {
-    color: black;
-    padding: 10px 12px;
-    text-decoration: none;
-    font-size: 20px;
-    display: block;
-    text-align: center;
-}
-
-.listinha a:hover {
-    background-color: var(--areia-roxa);
-}
-
-#menu-toggle:checked ~ .listinha {
-    display: block;
-}
-
-#menu-toggle:checked + .botao-materias {
-    background-color: white;
 }
